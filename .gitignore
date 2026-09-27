@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Build / compiled CUDA ops
+build/
+dist/
+*.egg-info/
+*.so
+*.o
+*.cu.o
+projects/mmdet3d_plugin/ops/build/
+projects/mmdet3d_plugin/ops/*.so
+
+# Datasets and generated metadata
+data/nuscenes/
+data/infos/*.pkl
+data/infos/*.json
+
+# Checkpoints and experiment outputs
+ckpts/*.pth
+ckpts/*.pt
+ckpts/*.ckpt
+work_dirs/
+outputs/
+vis_results/
+vis/
+*.pkl
+*.pth
+*.pt
+*.ckpt
+
+# Logs
+*.log
+*.out
+*.err
+tf_logs/
+events.out.tfevents.*
+wandb/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

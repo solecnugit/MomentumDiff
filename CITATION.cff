@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "MomentumDiff: Risk-Adaptive Momentum and Tangent-Projected Safety Priors for End-to-End Diffusion Planning"
+message: "Please cite the MomentumDiff paper and the upstream DiffusionDrive and SparseDrive projects."
+type: software
+authors:
+  - name: "MomentumDiff contributors"
+year: 2026
+license: MIT
