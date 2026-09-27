@@ -2,7 +2,9 @@
 
 Research code for **MomentumDiff: Risk-Adaptive Momentum and Tangent-Projected Safety Priors for End-to-End Diffusion Planning**. This implementation builds on DiffusionDrive and SparseDrive and includes nuScenes planning evaluation, Turning-nuScenes evaluation, temporal planning consistency (TPC), and visualization utilities.
 
-Checkpoints, nuScenes data and generated metadata are distributed separately. The included experiment config and planning anchors cover the 3s setting; the reported 6s results require a separate 12-step config, metadata and anchors.
+Due to limited preparation time, this repository provides a DiffusionDrive-based rapid reproduction version. The source code is here, and pretrained checkpoints are linked below. It is not the complete implementation described in the paper. The full implementation is coming soon.
+
+For this private preview, the weights are hosted in an existing private GitHub Release. Access to that repository is required to download them. nuScenes data and generated metadata must be prepared separately. The included experiment config and planning anchors cover the 3s setting; the reported 6s results require a separate 12-step config, metadata and anchors.
 
 ## Highlights
 
@@ -112,7 +114,12 @@ python tools/kmeans/kmeans_plan.py
 
 ## Checkpoints
 
-This repository does not include model weights. Put checkpoints under `ckpts/` or `work_dirs/` locally.
+Model weights are available from the [existing checkpoint release](https://github.com/momentumdiff/planning-artifact/releases/tag/v0.1-checkpoints). Download them to `ckpts/` locally; they are not committed to the source tree.
+
+| Checkpoint | Download |
+| --- | --- |
+| 3s planning | [planning_nuscenes_3s_r50.pth](https://github.com/momentumdiff/planning-artifact/releases/download/v0.1-checkpoints/planning_nuscenes_3s_r50.pth) |
+| 6s planning | [planning_nuscenes_6s_r50.pth](https://github.com/momentumdiff/planning-artifact/releases/download/v0.1-checkpoints/planning_nuscenes_6s_r50.pth) |
 
 Expected files for 3s reproduction:
 
@@ -129,14 +136,7 @@ mkdir -p ckpts
 wget -P ckpts https://download.pytorch.org/models/resnet50-19c8e357.pth
 ```
 
-The MomentumDiff checkpoints are not included in this source snapshot; use the checksums below to verify any separately distributed weights. The 6s checkpoint alone is insufficient for reproduction with the included 3s config.
-
-SHA256:
-
-```text
-planning_nuscenes_3s_r50.pth  C1758CE9631121A93D4B6769090F7DBD4E10035F30BC667058BC957118F76DB1
-planning_nuscenes_6s_r50.pth  138D5B567FF02BA5EB477E533503C2FE9B1813596F69FA7825BAF90A6D7260C4
-```
+The 3s checkpoint matches the included config. The 6s checkpoint is for the separately trained long-horizon setting and is insufficient for reproduction with the included 3s config. These private checkpoint links will need to be replaced when the final public repository is released.
 
 ## Training
 
