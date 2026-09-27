@@ -35,15 +35,6 @@ The table below keeps only the most diagnostic metrics from the paper rather tha
 | Turning-nuScenes 6s | DiffusionDrive | 3.13 | 1.77 | 2.03 |
 | Turning-nuScenes 6s | **MomentumDiff** | **2.91** | **1.34** | **1.97** |
 
-Closed-loop transfer is evaluated on Bench2Drive:
-
-The table reports paper results; this source snapshot does not include a Bench2Drive evaluation pipeline.
-
-| Method | Avg. L2 (lower) | Driving Score (higher) | Success Rate (%, higher) | Efficiency (higher) | Comfortness (higher) |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| DiffusionDrive | 0.75 | 77.68 | 52.72 | **248.18** | 24.56 |
-| **MomentumDiff** | **0.72** | **83.73** | **58.18** | 245.49 | 37.02 |
-
 ## Qualitative Examples
 
 <p align="center">
