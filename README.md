@@ -194,14 +194,14 @@ PYTHONPATH=. python tools/visualization/visualize.py \
 
 ## Citation
 
-If this code helps your research, please cite the MomentumDiff paper and the upstream projects it builds on. Venue and DOI details will be added when the final publication record is available.
+If this code helps your research, please cite the MomentumDiff paper and the upstream projects it builds on. Page numbers and DOI will be added when the final publication record is available.
 
 ```bibtex
-@misc{momentumdiff2026,
-  title  = {MomentumDiff: Risk-Adaptive Momentum and Tangent-Projected Safety Priors for End-to-End Diffusion Planning},
-  author = {JinMiao Song and Shu Xu},
-  year   = {2026},
-  note   = {Code release}
+@inproceedings{momentumdiff2026,
+  title     = {MomentumDiff: Risk-Adaptive Momentum and Tangent-Projected Safety Priors for End-to-End Diffusion Planning},
+  author    = {Song, JinMiao and Xu, Shu},
+  booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
+  year      = {2026}
 }
 ```
 
