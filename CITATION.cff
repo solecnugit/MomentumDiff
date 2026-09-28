@@ -3,6 +3,9 @@ title: "MomentumDiff: Risk-Adaptive Momentum and Tangent-Projected Safety Priors
 message: "Please cite the MomentumDiff paper and the upstream DiffusionDrive and SparseDrive projects."
 type: software
 authors:
-  - name: "MomentumDiff contributors"
+  - given-names: JinMiao
+    family-names: Song
+  - given-names: Shu
+    family-names: Xu
 year: 2026
 license: MIT
