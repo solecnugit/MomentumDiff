@@ -1,6 +1,6 @@
 # Checkpoints
 
-Checkpoints are hosted as GitHub Release assets, outside the Git source tree. For this private preview, see the [existing private checkpoint release](https://github.com/momentumdiff/planning-artifact/releases/tag/v0.1-checkpoints). The final public repository needs its own accessible checkpoint links.
+Checkpoints are hosted as GitHub Release assets, outside the Git source tree. See the [MomentumDiff checkpoint release](https://github.com/solecnugit/MomentumDiff/releases/tag/v0.1-checkpoints).
 
 Recommended local layout:
 
@@ -10,7 +10,7 @@ ckpts/planning_nuscenes_3s_r50.pth
 ckpts/planning_nuscenes_6s_r50.pth
 ```
 
-When moving checkpoints to another repository, verify:
+Release checks:
 
 1. The file is the intended model state only.
 2. No TensorBoard logs or local paths are bundled with it.

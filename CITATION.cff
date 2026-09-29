@@ -9,6 +9,7 @@ authors:
     family-names: Xu
 year: 2026
 license: MIT
+repository-code: "https://github.com/solecnugit/MomentumDiff"
 preferred-citation:
   type: conference-paper
   title: "MomentumDiff: Risk-Adaptive Momentum and Tangent-Projected Safety Priors for End-to-End Diffusion Planning"
